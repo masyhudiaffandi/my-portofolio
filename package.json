@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@types/aos": "^3.0.6",
+    "aos": "^2.3.4",
+    "flowbite": "^1.8.1",
+    "postcss": "^8.4.31",
+    "taos": "^1.0.5"
+  }
+}
