@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/output.css">
-    <script src="script.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body style="font-family: 'Montserrat'; background-color: black;">
     <nav class="px-8 md:px-16 sticky top-0 py-6 bg-[#040404] z-50">
@@ -49,7 +49,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="role  text-white justify-center text-center font-semibold mt-9 md:mt-64">
+                <div class="role  text-white justify-center text-center font-semibold mt-9 md:mt-64" data-aos="">
                     <h1>Web Dev Learner</h1>
                 </div>
                 <div class="social text-white justify-center text-center mt-4 flex gap-6">
@@ -75,15 +75,15 @@
             <div class="about-wrapper">
                 <div class="aboutme md:flex text-white justify-between gap-16">
                     <div class="aboutmetext ">
-                        <h1 class="text-3xl font-bold">About Me</h1>
+                        <h1 class="text-3xl font-bold" data-aos="fade-right">About Me</h1>
                         <div class="aboutp">
-                            <p class="md:text-left text-justify mt-6 bg-[#121212] p-6 rounded-3xl border border-[#0ff]">HI, Saya Masyhudi Affandi, seorang siswa di SMK Telkom Sidoarjo yang berasal dari keluarga sederhana namun memiliki kecenderungan teknologi yang tinggi. Saya tumbuh dalam lingkungan yang memupuk minat dan pemahaman mendalam terhadap dunia digital. Sejak kecil, saya selalu tertarik untuk memahami cara kerja teknologi dan eksplorasi terhadap berbagai inovasi baru. Tiap pelajaran yang saya dapatkan di sekolah selalu saya jadikan kesempatan untuk bereksperimen dan mengaplikasikannya dalam konsep baru yang saya temui. Hal ini tidak hanya membantu saya dalam meraih prestasi di sekolah, tetapi juga mendorong saya untuk terus berkembang dan menjadi inovator yang siap menghadapi dunia teknologi yang terus berubah.</p>
+                            <p class="md:text-left text-justify mt-6 bg-[#121212] p-6 rounded-3xl border border-[#0ff]" data-aos="zoom-in">HI, Saya Masyhudi Affandi, seorang siswa di SMK Telkom Sidoarjo yang berasal dari keluarga sederhana namun memiliki kecenderungan teknologi yang tinggi. Saya tumbuh dalam lingkungan yang memupuk minat dan pemahaman mendalam terhadap dunia digital. Sejak kecil, saya selalu tertarik untuk memahami cara kerja teknologi dan eksplorasi terhadap berbagai inovasi baru. Tiap pelajaran yang saya dapatkan di sekolah selalu saya jadikan kesempatan untuk bereksperimen dan mengaplikasikannya dalam konsep baru yang saya temui. Hal ini tidak hanya membantu saya dalam meraih prestasi di sekolah, tetapi juga mendorong saya untuk terus berkembang dan menjadi inovator yang siap menghadapi dunia teknologi yang terus berubah.</p>
                         </div>
                     </div>
                     <div class="right flex flex-col">
                         <div class="skills md:mt-0 mt-12 justify-center">
-                            <h1 class="text-3xl font-bold">Skills</h1>
-                            <div class="skillsicon flex gap-8 mt-6 justify-center bg-[#121212] p-6 rounded-full border border-[#0ff]">
+                            <h1 class="text-3xl font-bold" data-aos="fade-right">Skills</h1>
+                            <div class="skillsicon flex gap-8 mt-6 justify-center bg-[#121212] p-6 rounded-full border border-[#0ff]" data-aos="zoom-in">
                                 <i class="fa-brands fa-html5 fa-xl md:fa-2xl" style="color: rgb(255, 69, 0);"></i>
                                 <i class="fa-brands fa-css3-alt fa-xl md:fa-2xl" style="color: rgb(0, 140, 255);"></i>
                                 <i class="fa-brands fa-js fa-xl md:fa-2xl" style="color: yellow;"></i>
@@ -94,10 +94,10 @@
                         </div>
 
                         <div class="education mt-6">
-                            <h1 class="text-3xl font-bold">Education</h1>
+                            <h1 class="text-3xl font-bold" data-aos="fade-right">Education</h1>
                             <div class="studies mt-4">
-                                <p class="font-medium "> 🫥 Currently studying at : </p>
-                                <div class="skomda px-4 p-4 bg-[#121212] mt-2 rounded-full flex justify-between border border-[#0ff]">
+                                <p class="font-medium " data-aos="zoom-in"> 🫥 Currently studying at : </p>
+                                <div class="skomda px-4 p-4 bg-[#121212] mt-2 rounded-full flex justify-between border border-[#0ff]" data-aos="zoom-in">
                                     <p>SMK Telkom Sidoarjo - TJAT</p>
                                     <img src="src/img/ts.png" width="24px" height="auto" alt="">
                                 </div>
@@ -108,9 +108,9 @@
             </div>
         </div>
 
-        <div class="projects">
+        <div class="projects" data-aos="fade">
             <div class="projects-wrapper mx-8 md:mx-16 my-36 flex flex-col gap-12 justify-center">
-                <div class="project-title text-white text-3xl font-bold">
+                <div class="project-title text-white text-3xl font-bold" data-aos="fade-right">
                     <h1>My recent projects</h1>
                 </div>
                 <div class="max-w-2xl mx-auto w-full  p-6 rounded-2xl shadow-sm shadow-[#0ff]">
@@ -192,6 +192,11 @@
         </div>
     </main>
 
+
     <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
